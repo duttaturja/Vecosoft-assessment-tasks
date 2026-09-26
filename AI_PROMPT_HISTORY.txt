@@ -53,3 +53,11 @@ Kiro:
 Dont need to run the code, dont need any summary, review etc."
 
 Outcome: Commit name "fixed navbar, footer"
+
+--------------------------------------------------------------------------------
+
+Prompt 6:
+Gemini:
+"Implement LRU caching in C++"
+
+Outcome: prototype.cpp
