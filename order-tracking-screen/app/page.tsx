@@ -14,6 +14,16 @@ import {
 export default function HomePage() {
   return (
     <div className="w-full max-w-3xl mx-auto px-4 py-6 sm:px-6 sm:py-8 space-y-6">
+      {/* Admin view notice */}
+      <div className="rounded-lg border border-amber-200 bg-amber-50 dark:border-amber-900 dark:bg-amber-950/20 px-4 py-3">
+        <p className="text-sm font-medium text-amber-900 dark:text-amber-200">
+          🔒 Admin View Only
+        </p>
+        <p className="text-xs text-amber-700 dark:text-amber-300 mt-1">
+          This page displays all orders for administrative purposes. Individual tracking links are sent to customers.
+        </p>
+      </div>
+
       {/* Page header */}
       <div className="space-y-1">
         <div className="flex items-center gap-3">

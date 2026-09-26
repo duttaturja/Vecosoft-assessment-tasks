@@ -25,15 +25,9 @@ export function Footer() {
           <div className="flex gap-8 text-sm">
             <div className="space-y-2">
               <p className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
-                Navigation
+                Support
               </p>
               <nav className="flex flex-col gap-1.5">
-                <Link
-                  href="/"
-                  className="text-sm text-muted-foreground transition-colors hover:text-foreground"
-                >
-                  Orders
-                </Link>
                 <Link
                   href="/contact"
                   className="text-sm text-muted-foreground transition-colors hover:text-foreground"

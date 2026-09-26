@@ -34,7 +34,7 @@ Instruction: I need status badge for delivery status, order summary card, delive
 
 Note: Target audience Mobile users"
 
-Outcome: Commit name Prototype built
+Outcome: Commit name "Prototype built"
 
 --------------------------------------------------------------------------------
 
@@ -42,4 +42,14 @@ Prompt 4:
 Antigravity:
 "I need some changes. i want separate pages per order. the current main page will have all the oders with separate slug links for each orders. The slug links should be based on the order tracking number in the mockData.ts file. and i want a navbar and a footer along with separate contact and reporting issue pages. Use vecosoft as company name in the navbar"
 
-Outcome: Commit name separate pages built
+Outcome: Commit name "separate pages built"
+
+--------------------------------------------------------------------------------
+
+Prompt 5:
+Kiro:
+"Need a button for dark and light mode change in the navbar. write something like admin view only in the first webpage where all the order links are. remove contact and reporting issue from navbar and add them in the footer. also write a proper readme.md for the project. In the readme explain that the first page is admin view only and rest of the slug pages are sent to respective users to track their own goods. 
+
+Dont need to run the code, dont need any summary, review etc."
+
+Outcome: Commit name "fixed navbar, footer"
