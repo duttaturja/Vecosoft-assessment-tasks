@@ -19,6 +19,7 @@ export interface Order {
   estimatedDeliveryDate: string | null;
   carrier: string;
   trackingNumber: string | null;
+  price: number;
   items: Array<{ name: string; quantity: number; imagePlaceholder: string }>;
   trackingHistory: TrackingEvent[];
 }
@@ -28,7 +29,7 @@ export const mockOrders: Order[] = [
   // ==========================================
   // STANDARD OUTCOMES (No special situations)
   // ==========================================
-  
+
   {
     id: "1",
     orderNumber: "ORD-1001",
@@ -38,6 +39,7 @@ export const mockOrders: Order[] = [
     estimatedDeliveryDate: "2026-09-30T17:00:00Z",
     carrier: "FedEx",
     trackingNumber: "FX123456789",
+    price: 59.99,
     items: [{ name: "Wireless Earbuds", quantity: 1, imagePlaceholder: "/api/placeholder/80/80" }],
     trackingHistory: [
       { id: "e1", date: "2026-09-26T10:00:00Z", location: "Warehouse", description: "Order confirmed and being packed", status: "PROCESSING" }
@@ -52,6 +54,7 @@ export const mockOrders: Order[] = [
     estimatedDeliveryDate: "2026-09-28T17:00:00Z",
     carrier: "UPS",
     trackingNumber: "1Z9999999999999999",
+    price: 120.50,
     items: [{ name: "Mechanical Keyboard", quantity: 1, imagePlaceholder: "/api/placeholder/80/80" }],
     trackingHistory: [
       { id: "e2", date: "2026-09-26T14:30:00Z", location: "Los Angeles, CA", description: "Package arrived at transit facility", status: "SHIPPED" },
@@ -67,6 +70,7 @@ export const mockOrders: Order[] = [
     estimatedDeliveryDate: "2026-09-26T20:00:00Z",
     carrier: "USPS",
     trackingNumber: "9400100000000000000000",
+    price: 89.99,
     items: [{ name: "Coffee Beans 1kg", quantity: 2, imagePlaceholder: "/api/placeholder/80/80" }],
     trackingHistory: [
       { id: "e3", date: "2026-09-26T07:15:00Z", location: "Chattogram, BD", description: "Package is out for delivery", status: "OUT_FOR_DELIVERY" },
@@ -83,6 +87,7 @@ export const mockOrders: Order[] = [
     estimatedDeliveryDate: "2026-09-25T17:00:00Z",
     carrier: "DHL",
     trackingNumber: "DHL123456789",
+    price: 39.99,
     items: [{ name: "Running Shoes", quantity: 1, imagePlaceholder: "/api/placeholder/80/80" }],
     trackingHistory: [
       { id: "e4", date: "2026-09-25T14:45:00Z", location: "Front Porch", description: "Delivered, left at front door", status: "DELIVERED" },
@@ -106,6 +111,7 @@ export const mockOrders: Order[] = [
     estimatedDeliveryDate: "2026-10-02T17:00:00Z",
     carrier: "Pending",
     trackingNumber: null, // No tracking yet
+    price: 149.99,
     items: [{ name: "Office Chair", quantity: 1, imagePlaceholder: "/api/placeholder/80/80" }],
     trackingHistory: [
       { id: "e1", date: "2026-09-26T16:00:00Z", location: "Warehouse", description: "Order confirmed. Carrier is awaiting the package.", status: "PROCESSING" }
@@ -121,6 +127,7 @@ export const mockOrders: Order[] = [
     estimatedDeliveryDate: "2026-10-05T17:00:00Z", // Pushed back date
     carrier: "FedEx",
     trackingNumber: "FX987654321",
+    price: 249.99,
     items: [{ name: "Winter Jacket", quantity: 1, imagePlaceholder: "/api/placeholder/80/80" }],
     trackingHistory: [
       { id: "e3", date: "2026-09-26T12:00:00Z", location: "Denver, CO", description: "Weather delay. Delivery will be rescheduled.", status: "SHIPPED" },
@@ -138,6 +145,7 @@ export const mockOrders: Order[] = [
     estimatedDeliveryDate: "2026-09-25T17:00:00Z",
     carrier: "Amazon Logistics",
     trackingNumber: "TBA1234567890",
+    price: 149.99,
     items: [{ name: "Smart Watch", quantity: 1, imagePlaceholder: "/api/placeholder/80/80" }],
     trackingHistory: [
       { id: "e4", date: "2026-09-25T13:20:00Z", location: "Mailbox", description: "Delivered in/at mailbox", status: "DELIVERED" },
