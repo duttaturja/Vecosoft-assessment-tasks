@@ -1,0 +1,17 @@
+Prompt 1:
+Gemini:
+"I am doing a mini frontend project which is described below. i need mock data for the project. techstack: nextjs
+
+Project: Order tracking screen for an ecommerce site. has to show all 4 of the outcomes and 3 situations stated below:
+
+Outcomes: Processing, shipped, out of delivery, delivered.
+
+Situation: delayed order, tracking not available yet, delivered but not recieved.I am doing a mini frontend project which is described below. i need mock data for the project. techstack: nextjs
+
+Project: Order tracking screen for an ecommerce site. has to show all 4 of the outcomes and 3 situations stated below:
+
+Outcomes: Processing, shipped, out of delivery, delivered.
+
+Situation: delayed order, tracking not available yet, delivered but not recieved."
+
+Outcome: mockData.ts
