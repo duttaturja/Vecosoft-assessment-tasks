@@ -61,3 +61,12 @@ Gemini:
 "Implement LRU caching in C++"
 
 Outcome: prototype.cpp
+
+--------------------------------------------------------------------------------
+
+Prompt 6:
+Kiro:
+"for order number ORD-1005 since it doesnt have a tracking available make it also admin view only and replace the slug url ORD-1005 with something else. dont remove the slug entirely. instead of using track/tracker_id use processing/ORD-1005"
+
+Outcome: Commit name "fixed unavailable tracker order slug"
+

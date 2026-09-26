@@ -22,5 +22,9 @@ export function getOrderBySlug(slug: string): Order | undefined {
  * Get the tracking page URL for an order.
  */
 export function getOrderTrackingUrl(order: Order): string {
+  // Orders without tracking available use processing route (admin view only)
+  if (order.exception === "TRACKING_UNAVAILABLE") {
+    return `/processing/${order.orderNumber}`;
+  }
   return `/track/${getOrderSlug(order)}`;
 }
