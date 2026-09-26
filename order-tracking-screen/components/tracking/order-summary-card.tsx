@@ -1,15 +1,31 @@
+"use client";
+
 import { cn } from "@/lib/utils";
 import { type Order } from "@/lib/mockData";
 import { Card, CardContent } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { StatusBadge } from "./status-badge";
-import { Package, Copy } from "lucide-react";
+import { Package, Copy, Check } from "lucide-react";
+import { useState, useCallback } from "react";
 
 interface OrderSummaryCardProps {
   order: Order;
 }
 
 export function OrderSummaryCard({ order }: OrderSummaryCardProps) {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = useCallback(async () => {
+    if (!order.trackingNumber) return;
+    try {
+      await navigator.clipboard.writeText(order.trackingNumber);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback: silently fail
+    }
+  }, [order.trackingNumber]);
+
   return (
     <Card className="animate-fade-in">
       <CardContent className="space-y-4">
@@ -76,11 +92,13 @@ export function OrderSummaryCard({ order }: OrderSummaryCardProps) {
                 <button
                   className="shrink-0 text-muted-foreground hover:text-foreground transition-colors active:scale-90"
                   aria-label="Copy tracking number"
-                  onClick={() => {
-                    // Client-side copy handled in the client wrapper
-                  }}
+                  onClick={handleCopy}
                 >
-                  <Copy className="size-3.5" />
+                  {copied ? (
+                    <Check className="size-3.5 text-status-delivered" />
+                  ) : (
+                    <Copy className="size-3.5" />
+                  )}
                 </button>
               </div>
             ) : (

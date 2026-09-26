@@ -34,4 +34,12 @@ Instruction: I need status badge for delivery status, order summary card, delive
 
 Note: Target audience Mobile users"
 
-Outcome:
+Outcome: Commit name Prototype built
+
+--------------------------------------------------------------------------------
+
+Prompt 4:
+Antigravity:
+"I need some changes. i want separate pages per order. the current main page will have all the oders with separate slug links for each orders. The slug links should be based on the order tracking number in the mockData.ts file. and i want a navbar and a footer along with separate contact and reporting issue pages. Use vecosoft as company name in the navbar"
+
+Outcome: Commit name separate pages built

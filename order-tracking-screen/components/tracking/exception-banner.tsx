@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { type ExceptionType } from "@/lib/mockData";
 import { EXCEPTION_CONFIG } from "@/lib/tracking-utils";
@@ -45,9 +46,12 @@ export function ExceptionBanner({ exception }: ExceptionBannerProps) {
           {config.message}
         </p>
         {exception === "DELIVERED_NOT_RECEIVED" && (
-          <button className="mt-2 inline-flex items-center gap-1 rounded-md bg-status-error/10 px-3 py-1.5 text-xs font-medium text-status-error transition-colors hover:bg-status-error/20 active:scale-[0.98]">
+          <Link
+            href="/contact"
+            className="mt-2 inline-flex items-center gap-1 rounded-md bg-status-error/10 px-3 py-1.5 text-xs font-medium text-status-error transition-colors hover:bg-status-error/20 active:scale-[0.98]"
+          >
             Contact Support
-          </button>
+          </Link>
         )}
       </div>
     </div>
