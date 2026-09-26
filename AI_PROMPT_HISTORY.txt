@@ -15,3 +15,12 @@ Outcomes: Processing, shipped, out of delivery, delivered.
 Situation: delayed order, tracking not available yet, delivered but not recieved."
 
 Outcome: mockData.ts
+
+--------------------------------------------------------------------------------
+
+Prompt 2:
+Gemini:
+"Suggest me 2 color palettes for 2 different modes(dark and light) and a google font for the mini project."
+
+Outcome: design.md
+
