@@ -24,3 +24,14 @@ Gemini:
 
 Outcome: design.md
 
+--------------------------------------------------------------------------------
+
+Prompt 3:
+Antigravity:
+"Task: Build a mini frontend project in nextjs(typescript+App router) with shadcn. The project is a online tracking screen that shows users their order status on an ecommerce platform. Use the mockData.ts for data and design.md for the ui design. Keep the UI clean, fast, user-friendly and most importantly responsive(mobile first). 
+
+Instruction: I need status badge for delivery status, order summary card, delivery timeline, estimated delivery, loading skeleton etc.
+
+Note: Target audience Mobile users"
+
+Outcome:
