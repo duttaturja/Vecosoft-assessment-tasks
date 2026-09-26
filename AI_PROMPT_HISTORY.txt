@@ -70,3 +70,10 @@ Kiro:
 
 Outcome: Commit name "fixed unavailable tracker order slug"
 
+--------------------------------------------------------------------------------
+
+Prompt 7:
+Kiro:
+"Write an outer readme file where it says this is my official submission of vecosofts internship assessments tasks"
+
+Outcome: Readme.md
