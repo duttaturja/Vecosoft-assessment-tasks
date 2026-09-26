@@ -117,11 +117,3 @@ Users can toggle between light and dark modes using the theme button in the navb
 For support options, users can:
 - Visit the **Contact** page (accessible via footer)
 - Submit issues via the **Report Issue** page (accessible via footer)
-
-## License
-
-[Add your license information here]
-
-## Contributing
-
-[Add contribution guidelines here]
